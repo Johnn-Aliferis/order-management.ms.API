@@ -20,7 +20,6 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<OrderManagementDBContext>(options =>
 {
     options.UseNpgsql(connectionString); // for postgresSQL
-
 });
 
 // Service and Repository
